@@ -17,5 +17,5 @@ response_json = response.json()
 transcript = response_json.get('results', {}).get('channels', [{}])[0].get('alternatives', [{}])[0].get('transcript', '')
 
 print(transcript)
-with open('transcript.txt', 'w') as file:
+with open('/app/harvard/transcript.txt', 'w') as file:
     file.write(transcript)

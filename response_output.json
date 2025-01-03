@@ -1,0 +1,292 @@
+{
+    "metadata": {
+        "transaction_key": "deprecated",
+        "request_id": "5d3562ef-08a3-41fd-ad58-9469e2d0bc39",
+        "sha256": "971b4163670445c415c6b0fb6813c38093409ecac2f6b4d429ae3574d24ad470",
+        "created": "2025-01-03T08:54:08.001Z",
+        "duration": 18.356188,
+        "channels": 1,
+        "models": [
+            "1ed36bac-f71c-4f3f-a31f-02fd6525c489"
+        ],
+        "model_info": {
+            "1ed36bac-f71c-4f3f-a31f-02fd6525c489": {
+                "name": "general",
+                "version": "2024-01-26.8851",
+                "arch": "base"
+            }
+        }
+    },
+    "results": {
+        "channels": [
+            {
+                "alternatives": [
+                    {
+                        "transcript": "the stale smell of old beer lingers it takes heat to bring out the odor a cold dip restores health and zest a salt pickle tastes fine with ham tacos all pasteur are my favorite a zest food is the hot cross bun",
+                        "confidence": 0.9941406,
+                        "words": [
+                            {
+                                "word": "the",
+                                "start": 1.3157419,
+                                "end": 1.6347096,
+                                "confidence": 0.9975586
+                            },
+                            {
+                                "word": "stale",
+                                "start": 1.6347096,
+                                "end": 2.1131613,
+                                "confidence": 0.7988281
+                            },
+                            {
+                                "word": "smell",
+                                "start": 2.1131613,
+                                "end": 2.352387,
+                                "confidence": 0.9995117
+                            },
+                            {
+                                "word": "of",
+                                "start": 2.352387,
+                                "end": 2.5916128,
+                                "confidence": 0.99902344
+                            },
+                            {
+                                "word": "old",
+                                "start": 2.5916128,
+                                "end": 2.8308387,
+                                "confidence": 0.9765625
+                            },
+                            {
+                                "word": "beer",
+                                "start": 2.8308387,
+                                "end": 3.1498063,
+                                "confidence": 0.9951172
+                            },
+                            {
+                                "word": "lingers",
+                                "start": 3.1498063,
+                                "end": 3.548516,
+                                "confidence": 0.99902344
+                            },
+                            {
+                                "word": "it",
+                                "start": 4.4256773,
+                                "end": 4.664903,
+                                "confidence": 0.99853516
+                            },
+                            {
+                                "word": "takes",
+                                "start": 4.664903,
+                                "end": 4.904129,
+                                "confidence": 0.9995117
+                            },
+                            {
+                                "word": "heat",
+                                "start": 4.904129,
+                                "end": 5.2230964,
+                                "confidence": 1.0
+                            },
+                            {
+                                "word": "to",
+                                "start": 5.2230964,
+                                "end": 5.3825803,
+                                "confidence": 0.99902344
+                            },
+                            {
+                                "word": "bring",
+                                "start": 5.3825803,
+                                "end": 5.621806,
+                                "confidence": 0.9980469
+                            },
+                            {
+                                "word": "out",
+                                "start": 5.621806,
+                                "end": 5.861032,
+                                "confidence": 0.99072266
+                            },
+                            {
+                                "word": "the",
+                                "start": 5.861032,
+                                "end": 6.020516,
+                                "confidence": 0.99853516
+                            },
+                            {
+                                "word": "odor",
+                                "start": 6.020516,
+                                "end": 6.259742,
+                                "confidence": 0.9941406
+                            },
+                            {
+                                "word": "a",
+                                "start": 6.977419,
+                                "end": 7.2963867,
+                                "confidence": 0.99658203
+                            },
+                            {
+                                "word": "cold",
+                                "start": 7.2963867,
+                                "end": 7.6153545,
+                                "confidence": 0.984375
+                            },
+                            {
+                                "word": "dip",
+                                "start": 7.6153545,
+                                "end": 8.115355,
+                                "confidence": 0.98828125
+                            },
+                            {
+                                "word": "restores",
+                                "start": 8.25329,
+                                "end": 8.492516,
+                                "confidence": 0.9970703
+                            },
+                            {
+                                "word": "health",
+                                "start": 8.492516,
+                                "end": 8.891226,
+                                "confidence": 0.99658203
+                            },
+                            {
+                                "word": "and",
+                                "start": 8.891226,
+                                "end": 9.05071,
+                                "confidence": 0.74560547
+                            },
+                            {
+                                "word": "zest",
+                                "start": 9.05071,
+                                "end": 9.369677,
+                                "confidence": 0.99902344
+                            },
+                            {
+                                "word": "a",
+                                "start": 9.927871,
+                                "end": 10.246839,
+                                "confidence": 0.9863281
+                            },
+                            {
+                                "word": "salt",
+                                "start": 10.246839,
+                                "end": 10.565806,
+                                "confidence": 0.9946289
+                            },
+                            {
+                                "word": "pickle",
+                                "start": 10.565806,
+                                "end": 11.044258,
+                                "confidence": 0.92285156
+                            },
+                            {
+                                "word": "tastes",
+                                "start": 11.044258,
+                                "end": 11.363225,
+                                "confidence": 0.6171875
+                            },
+                            {
+                                "word": "fine",
+                                "start": 11.363225,
+                                "end": 11.602451,
+                                "confidence": 0.9946289
+                            },
+                            {
+                                "word": "with",
+                                "start": 11.602451,
+                                "end": 11.841677,
+                                "confidence": 0.9970703
+                            },
+                            {
+                                "word": "ham",
+                                "start": 11.841677,
+                                "end": 12.080903,
+                                "confidence": 0.99658203
+                            },
+                            {
+                                "word": "tacos",
+                                "start": 12.729387,
+                                "end": 12.968187,
+                                "confidence": 0.5517578
+                            },
+                            {
+                                "word": "all",
+                                "start": 13.047787,
+                                "end": 13.286587,
+                                "confidence": 0.35473633
+                            },
+                            {
+                                "word": "pasteur",
+                                "start": 13.286587,
+                                "end": 13.6845875,
+                                "confidence": 0.9746094
+                            },
+                            {
+                                "word": "are",
+                                "start": 13.6845875,
+                                "end": 13.923388,
+                                "confidence": 0.99902344
+                            },
+                            {
+                                "word": "my",
+                                "start": 13.923388,
+                                "end": 14.082587,
+                                "confidence": 0.9975586
+                            },
+                            {
+                                "word": "favorite",
+                                "start": 14.082587,
+                                "end": 14.480587,
+                                "confidence": 0.99560547
+                            },
+                            {
+                                "word": "a",
+                                "start": 15.117387,
+                                "end": 15.356187,
+                                "confidence": 0.9902344
+                            },
+                            {
+                                "word": "zest",
+                                "start": 15.356187,
+                                "end": 15.833787,
+                                "confidence": 0.99902344
+                            },
+                            {
+                                "word": "food",
+                                "start": 15.833787,
+                                "end": 16.231787,
+                                "confidence": 0.9941406
+                            },
+                            {
+                                "word": "is",
+                                "start": 16.231787,
+                                "end": 16.470587,
+                                "confidence": 0.99902344
+                            },
+                            {
+                                "word": "the",
+                                "start": 16.470587,
+                                "end": 16.629787,
+                                "confidence": 0.99658203
+                            },
+                            {
+                                "word": "hot",
+                                "start": 16.629787,
+                                "end": 16.948187,
+                                "confidence": 0.9995117
+                            },
+                            {
+                                "word": "cross",
+                                "start": 16.948187,
+                                "end": 17.266586,
+                                "confidence": 0.8466797
+                            },
+                            {
+                                "word": "bun",
+                                "start": 17.266586,
+                                "end": 17.505386,
+                                "confidence": 0.96484375
+                            }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+}

@@ -1,5 +1,6 @@
 # Deploy using docker compose
 Step 1 Login to Deepgram get a new api key
+
 Step 2 In Windows, create a .env file
 ```bash
 DEEPGRAM_API_KEY=DEEPGRAM_KEY
@@ -10,6 +11,7 @@ docker compose up -d
 ```
 # Deploy using k8s
 Step 1 Login to Deepgram get a new api key
+
 Step 2 In Windows, start Minikube
 ```bash
 minikube start

@@ -28,7 +28,7 @@ minikube image load deepgram-app:latest
 ```
 Step 6 Deploy setup
 ```bash
-kubectl apply -f .\k8s\secret.yaml
+kubectl apply -f .\k8s\secret.yaml # Note: add api key in base64 encoded format in k8s/secret.yaml 
 kubectl apply -f .\k8s\service.yaml
 kubectl apply -f .\k8s\deployment.yaml
 ```

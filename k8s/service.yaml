@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: flask-audio-transcriber
+spec:
+  selector:
+    app: flask-audio-transcriber
+  ports:
+    - protocol: TCP
+      port: 30080
+      targetPort: 30080
+      nodePort: 30080
+  type: NodePort

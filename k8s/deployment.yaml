@@ -1,0 +1,37 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: flask-audio-transcriber
+  labels:
+    app: flask-audio-transcriber
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: flask-audio-transcriber
+  template:
+    metadata:
+      labels:
+        app: flask-audio-transcriber
+    spec:
+      containers:
+      - name: flask-audio-transcriber
+        image: deepgram-app:latest
+        imagePullPolicy: Never
+        ports:
+        - containerPort: 30080
+        env:
+        - name: DEEPGRAM_API_KEY
+          valueFrom:
+            secretKeyRef:
+              name: flask-secrets
+              key: DEEPGRAM_API_KEY
+        # volumeMounts:
+        # - name: harvard-volume
+        #   mountPath: /app/harvard
+        command: ["python", "example1.py"]
+      # volumes:
+      # - name: harvard-volume
+      #   hostPath:
+      #     path: C:\Users\kivic\Documents\Personal\Deepgram\harvard
+      #     type: Directory

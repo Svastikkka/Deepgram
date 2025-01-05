@@ -54,11 +54,21 @@ Now we can upload our wav audio and get text by submiting form
 | Use Case             | Best for users who want a fully managed Kubernetes experience | Best for users with EKS who want fine-grained control over resources | Best for GKE users who want automatic node scaling with some level of control |
 
 
+# Optimise muliple weight files
+Question: ⁠How to optimise multiple weight files of deep learning models in one service/ pod ?
+
+
+1. Storage: Store the model weights in a shared location e.g object storage like MinIO, AWS S3, EFS. If we are using k8s, we can consider using a persistent volume (PV) with AWS EFS or GCP file store a shared volume to store the weights.
+2. Model Versioning: If we have multiple versions of the models, keep track of the version number to avoid issues with outdated weights.
+3. Model File Format: To ensure that the models are stored in efficient formats like TensorFlow SavedModel, ONNX, or PyTorch .pth files, depending on the framework.
+4. Preload Model: We can load models dynamically when needed or when API hit.
+
 
 # References
 - [Karpenter](https://karpenter.sh/)
 - [Reducing GKE production costs](https://medium.com/@omers1414/reducing-gke-production-costs-314602419647)
 - [GKE Autopilot vs. AWS Karpenter: A Deep Dive into Billing Efficiency and Discount Models](https://medium.com/@garfield13579/gke-autopilot-vs-aws-karpenter-a-deep-dive-into-billing-efficiency-and-discount-models-01829636dd9d)
+- [How to optimize Kubernetes performance for machine learning workloads](https://www.ivinco.com/blog/how-to-optimize-kubernetes-performance-for-machine-learning-workloads)
 
 
 Note: Considering in minikube but note we can deploy in EKS cluster as well.

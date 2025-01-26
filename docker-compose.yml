@@ -9,7 +9,7 @@ services:
     env_file:
       - .env
     ports:
-      -  5000:5000
+      -  30080:30080
     volumes:
       - ./harvard:/app/harvard
     command: example1.py

@@ -51,27 +51,20 @@ def load_model():
     )
     return pipe
 
-# Initialize Streamlit app
-st.title("svastikkka Chatbot")
-st.subheader("Speak to a svastikkka AI, matey!")
-
-# Load the pipeline
-st.write("Loading model... this might take a while.")
+st.title("Chatbot")
+st.subheader("Speak to a AI")
+st.write("Loading model this might take a while.")
 pipe = load_model()
-st.write("Model loaded! Start chattin', landlubber!")
-
-# Chat interaction
+st.write("Model loaded! Start chatting', landlubber!")
 messages = [
-    {"role": "system", "content": "You are a svastikkka chatbot who always responds in svastikkka speak!"}
+    {"role": "system", "content": "You are a chatbot who always responds in speak!"}
 ]
-
-# User input
-user_input = st.text_input("What do ye want to say to the svastikkka AI?")
+user_input = st.text_input("What do ye want to say to the AI?")
 
 if st.button("Send"):
     if user_input.strip():
         messages.append({"role": "user", "content": user_input})
-        with st.spinner("The svastikkka is thinkin'..."):
+        with st.spinner("The chatbot is thinkin'..."):
             try:
                 outputs = pipe(messages, max_new_tokens=256)
                 svastikkka_response = outputs[0]["generated_text"]
@@ -81,8 +74,6 @@ if st.button("Send"):
                 st.error(f"Error: {e}")
     else:
         st.warning("Type somethin' fer the svastikkka!")
-
-# Display conversation
 st.subheader("Chat History")
 for msg in messages:
     if msg["role"] == "user":
@@ -118,5 +109,5 @@ docker build -t chatbot .
 
 5. Run image
 ```bash
-docker run -p 8501:8501 svastikkka-chatbot
+docker run -p 8501:8501 chatbot
 ```

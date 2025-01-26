@@ -1,0 +1,34 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: svastikkka-chatbot
+  labels:
+    app: svastikkka-chatbot
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: svastikkka-chatbot
+  template:
+    metadata:
+      labels:
+        app: svastikkka-chatbot
+    spec:
+      containers:
+        - name: svastikkka-chatbot
+          image: svastikkka-chatbot:latest
+          ports:
+            - containerPort: 8501
+          env:
+            - name: HUGGINGFACE_TOKEN
+              valueFrom:
+                secretKeyRef:
+                  name: huggingface-token
+                  key: HUGGINGFACE_TOKEN
+          resources:
+            requests:
+              memory: "256Mi"
+              cpu: "250m"
+            limits:
+              memory: "512Mi"
+              cpu: "500m"

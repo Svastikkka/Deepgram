@@ -5,3 +5,6 @@
 
 
 pip install accelerate>=0.26.0 torch transformers
+
+
+docker build -t svastikkka/toolace .

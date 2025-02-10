@@ -1,0 +1,49 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: toolace
+  namespace: dev
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: toolace
+  template:
+    metadata:
+      labels:
+        app: toolace
+    spec:
+      containers:
+        - name: toolace
+          image: docker.io/manshu2025/toolace
+          imagePullPolicy: Always
+          command: ["python", "script.py"]
+          stdin: true
+          tty: true
+          resources:
+            limits:
+              memory: "2Gi"
+              cpu: "1"
+            requests:
+              memory: "1Gi"
+              cpu: "0.5"
+          volumeMounts:
+            - name: model-cache
+              mountPath: /root/.cache/huggingface
+      volumes:
+        - name: model-cache
+          emptyDir: {}
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: toolace-service
+  namespace: dev
+spec:
+  selector:
+    app: toolace
+  ports:
+    - protocol: TCP
+      port: 8080
+      targetPort: 8080
+  type: ClusterIP

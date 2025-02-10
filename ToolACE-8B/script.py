@@ -8,3 +8,5 @@ model = AutoModelForCausalLM.from_pretrained(
     torch_dtype='auto',
     device_map='auto'
 )
+
+print("Model and tokenizer loaded successfully!")
